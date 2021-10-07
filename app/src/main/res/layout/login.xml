@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_login">
+
+    <com.android.fury.Dambel.Font_text.Font
+        android:id="@+id/welcome_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="80dp"
+        android:text="خوش آمدی"
+        android:textColor="@color/color30day"
+        android:gravity="center"
+        android:textSize="25sp"/>
+
+    <com.android.fury.Dambel.Font_text.Font
+        android:id="@+id/e_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:text="برای استفاده از اپلیکیشن باید اشتراک داشته باشید!"
+        android:textColor="@color/color30day"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"/>
+
+    <com.android.fury.Dambel.Font_text.Font
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_below="@+id/e_txt"
+        android:layout_centerInParent="true"
+        android:text="دریافت اشتراک"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:background="@drawable/back_loginbttn"/>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_below="@+id/send"
+            android:layout_centerInParent="true"
+            android:layout_height="wrap_content">
+        </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_sport"
+    tools:context=".sport.sport">
+
+    <include
+        android:id="@+id/clude_1"
+        layout="@layout/tolbar_start" />
+
+    <include layout="@layout/st_bar_red_2"
+        android:id="@+id/statos_bar"/>
+
+    <com.android.fury.Dambel.Font_text.Font
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/text_sport"
+        android:layout_below="@+id/statos_bar"
+        android:textSize="20dp"
+        android:textColor="@color/text_color_2"
+        android:layout_marginTop="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/statos_bar">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView_sport"
+        android:fadeScrollbars="true"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <com.andexert.library.RippleView
+                android:id="@+id/more014"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:padding="6dp"
+                rv_color="@color/background_sport"
+                app:rv_type="doubleRipple">
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    app:cardBackgroundColor="@color/color30day"
+                    app:cardCornerRadius="10dp"
+                    android:visibility="gone"
+                    app:cardElevation="5dp"
+                    android:id="@+id/com_son_sport">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <com.android.fury.Dambel.Font_text.Font
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/text_sport_me_name"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:textColor="@color/background_sport"
+                            android:id="@+id/ssss"/>
+
+                        <com.android.fury.Dambel.Font_text.Font
+                            android:layout_width="wrap_content"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:text="@string/text_sport_me_name_mane"
+                            android:layout_gravity="bottom|center_horizontal"
+                            android:textSize="15sp"
+                            android:gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:textColor="@color/background_sport"
+                            android:id="@+id/comingso"/>
+
+                    </LinearLayout>
+
+                </android.support.v7.widget.CardView>
+            </com.andexert.library.RippleView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sport_rl_1"
+                android:padding="10dp"
+                android:layout_below="@+id/more014">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_1"
+                    android:background="@drawable/back_sport_start_open">
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:id="@+id/btn_1_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_1"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_1_day"
+                        android:textSize="20sp"/>
+
+
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sport_rl_2"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_2"
+                    android:background="@drawable/back_sport_start_open">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_2_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_2"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_2_day"
+                        android:textSize="20sp"/>
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:id="@+id/sport_rl_3"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_2">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_3"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_3_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_3"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_3_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_3"
+                android:id="@+id/sport_rl_4">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_4"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_4_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_4"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_4_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_4"
+                android:id="@+id/sport_rl_5">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_5"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_5_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_5"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_5_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_5"
+                android:id="@+id/sport_rl_6">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_6"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_6_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_6"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_6_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_6"
+                android:id="@+id/sport_rl_7">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_7"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_7_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_7"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_7_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_7"
+                android:id="@+id/sport_rl_8">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_8"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_8_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_8"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_8_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_8"
+                android:id="@+id/sport_rl_9">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_9"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_9_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_9"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_9_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_9"
+                android:id="@+id/sport_rl_10">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_10"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:id="@+id/btn_10_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_10"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_10_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_10"
+                android:id="@+id/sport_rl_11">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_11"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_11_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_11"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_11_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_11"
+                android:id="@+id/sport_rl_12">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_12"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_12_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_12"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_12_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_12"
+                android:id="@+id/sport_rl_13">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_13"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_13_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_13"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_13_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_13"
+                android:id="@+id/sport_rl_14">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_14"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_14_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_14"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_14_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_14"
+                android:id="@+id/sport_rl_15">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_15"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_15_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_15"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_15_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_15"
+                android:id="@+id/sport_rl_16">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_16"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_16_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_16"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_16_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_16"
+                android:id="@+id/sport_rl_17">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_17"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_17_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_17"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_17_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_17"
+                android:id="@+id/sport_rl_18">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_18"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_18_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_18"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_18_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_18"
+                android:id="@+id/sport_rl_19">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_19"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_19_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_19"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_19_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_19"
+                android:id="@+id/sport_rl_20">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_20"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone"
+                        android:id="@+id/btn_20_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_20"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_20_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_20"
+                android:id="@+id/sport_rl_21">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_21"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_21_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_21"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_21_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_21"
+                android:id="@+id/sport_rl_22">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_22"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_22_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_22"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_22_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_22"
+                android:id="@+id/sport_rl_23">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_23"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_23_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_23"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_23_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_23"
+                android:id="@+id/sport_rl_24">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_24"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_24_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_24"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_24_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_24"
+                android:id="@+id/sport_rl_25">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_25"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_25_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_25"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_25_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_25"
+                android:id="@+id/sport_rl_26">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_26"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_26_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_26"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_26_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_26"
+                android:id="@+id/sport_rl_27">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_27"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_27_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_27"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_27_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:layout_below="@+id/sport_rl_27"
+                android:id="@+id/sport_rl_28">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_28"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_28_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_28"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_28_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_28"
+                android:id="@+id/sport_rl_29">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_29"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_29_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_29"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_29_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:orientation="horizontal"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/sport_rl_29"
+                android:id="@+id/sport_rl_30"
+                android:layout_marginBottom="100dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:id="@+id/card_view_sport_30"
+                    android:background="@drawable/back_sport_start_open">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/circle_day_star"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/btn_30_sport_star"/>
+
+                    <com.android.fury.Dambel.Font_text.Font
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/sport_30"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:gravity="center"
+                        android:textColor="@color/color30day"
+                        android:id="@+id/txt_sport_30_day"
+                        android:textSize="20sp"/>
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:background="@drawable/shodw_sport_me_start2"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
